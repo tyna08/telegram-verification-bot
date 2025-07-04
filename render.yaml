@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: telegram-verification-bot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: python app.py
+    envVars:
+      - key: 8128320823:AAHTjoC-CWHR6lALLnLeXgEY2jZtw1ovOBQ
+        sync: false
