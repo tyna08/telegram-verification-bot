@@ -9,7 +9,7 @@ app = Flask(__name__)
 TOKEN = os.getenv("8128320823:AAHTjoC-CWHR6lALLnLeXgEY2jZtw1ovOBQ")
 
 if not TOKEN:
-    raise ValueError("Missing TELEGRAM_BOT_TOKEN environment variable.")
+    raise ValueError("8128320823:AAHTjoC-CWHR6lALLnLeXgEY2jZtw1ovOBQ")
 
 # ✅ Valid and fake product codes
 valid_codes = {
