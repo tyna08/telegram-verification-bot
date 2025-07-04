@@ -6,10 +6,11 @@ from flask import Flask, request
 app = Flask(__name__)
 
 # 🔐 Get your Telegram bot token from an environment variable
-TOKEN = os.getenv("8128320823:AAHTjoC-CWHR6lALLnLeXgEY2jZtw1ovOBQ")
+TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 
 if not TOKEN:
-    raise ValueError("8128320823:AAHTjoC-CWHR6lALLnLeXgEY2jZtw1ovOBQ")
+    raise ValueError("Missing TELEGRAM_BOT_TOKEN environment variable.")
+
 
 # ✅ Valid and fake product codes
 valid_codes = {
