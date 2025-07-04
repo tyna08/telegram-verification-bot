@@ -71,6 +71,11 @@ def telegram_webhook():
     return {"ok": True}
 
 # 🚀 Run Flask locally
+
+@app.route("/", methods=["GET"])
+def home():
+    return "✅ Telegram Verification Bot is Running!"
+
 if __name__ == "__main__":
     app.run(port=5000, debug=True)
 
